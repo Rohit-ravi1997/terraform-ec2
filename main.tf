@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket       = "myterraformstatebucket"
+    key          = "ec2"
+    region       = "ap-southeast-2"
+    use_lockfile = true
+  }
+}
 module "my-vpc" {
   source = "./modules/vpc"
   cidr_block = var.cidr_block
