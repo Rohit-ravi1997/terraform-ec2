@@ -1,0 +1,7 @@
+cidr_block        = "10.0.0.0/16"
+subnet_cidr_block = "10.0.1.0/24"
+ami               = "ami-010876b9ddd38475e"
+instance_type     = "t3.micro"
+Name              = "my-vpc"
+subnet_name       = "my-subnet"
+ec2_instance_name = "my-ec2-instance"
